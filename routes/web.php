@@ -18,6 +18,14 @@ $app->get('/', function () use ($app) {
 $app->get('/key', function () {
     return str_random(32);
 });
+// Projects
+$app->get('/projects', ['uses' => 'ProjectsController@getAll']);
+$app->get('/projects/{id}', ['uses' => 'ProjectsController@getProject']);
+
+$app->post('/projects', ['uses' => 'ProjectsController@createProject']);
+
+$app->put('/projects/{id}', ['uses' => 'ProjectsController@updateProject']);
+$app->delete('/projects/{id}', ['uses' => 'ProjectsController@deleteProject']);
 
 // Users
 $app->get('/users', ['uses' => 'UsersController@getAll']);
