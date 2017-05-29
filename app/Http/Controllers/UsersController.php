@@ -78,7 +78,8 @@ class UsersController extends Controller
         if ($request->isJson()) {
 
             try {
-                $user = User::findOrFail($id);
+                $user = User::with(['issues_assigned_to_me', 'issues_reported_to_me'])->findOrFail($id);
+
                 return response()->json($user, 200);
             } catch (ModelNotFoundException $e) {
                 return response()->json(['error' => 'No content'], 406);
