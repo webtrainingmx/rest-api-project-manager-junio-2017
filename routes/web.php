@@ -27,6 +27,15 @@ $app->post('/projects', ['uses' => 'ProjectsController@createProject']);
 $app->put('/projects/{id}', ['uses' => 'ProjectsController@updateProject']);
 $app->delete('/projects/{id}', ['uses' => 'ProjectsController@deleteProject']);
 
+// Issues
+$app->get('/issues', ['uses' => 'IssuesController@getAll']);
+$app->get('/issues/{id}', ['uses' => 'IssuesController@getIssue']);
+
+$app->post('/issues', ['uses' => 'IssuesController@createIssue']);
+
+$app->put('/issues/{id}', ['uses' => 'IssuesController@updateIssue']);
+$app->delete('/issues/{id}', ['uses' => 'IssuesController@deleteIssue']);
+
 // Users
 $app->get('/users', ['uses' => 'UsersController@getAll']);
 $app->get('/users/{id}', ['uses' => 'UsersController@getUser']);
