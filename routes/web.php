@@ -15,6 +15,15 @@ $app->get('/', function () use ($app) {
     return $app->version();
 });
 
-$app->get('/key', function() {
+$app->get('/key', function () {
     return str_random(32);
 });
+
+// Users
+$app->get('/users', ['uses' => 'UsersController@getAll']);
+$app->get('/users/{id}', ['uses' => 'UsersController@getUser']);
+
+$app->post('/users', ['uses' => 'UsersController@createUser']);
+
+$app->put('/users/{id}', ['uses' => 'UsersController@updateUser']);
+$app->delete('/users/{id}', ['uses' => 'UsersController@deleteUser']);
