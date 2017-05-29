@@ -6,7 +6,8 @@ use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+
+//use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class UsersController extends Controller
 {
@@ -87,5 +88,23 @@ class UsersController extends Controller
             return response()->json(['error' => 'Unauthorized'], 401, []);
         }
 
+    }
+
+    public function deleteUser(Request $request, $id)
+    {
+        if ($request->isJson()) {
+
+            try {
+                $user = User::findOrFail($id);
+                $user->delete();
+
+                return response()->json($user, 200);
+            } catch (ModelNotFoundException $e) {
+                return response()->json(['error' => 'No content'], 406);
+            }
+
+        } else {
+            return response()->json(['error' => 'Unauthorized'], 401, []);
+        }
     }
 }
