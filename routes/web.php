@@ -18,29 +18,35 @@ $app->get('/', function () use ($app) {
 $app->get('/key', function () {
     return str_random(32);
 });
-// Projects
-$app->get('/projects', ['uses' => 'ProjectsController@getAll']);
-$app->get('/projects/{id}', ['uses' => 'ProjectsController@getProject']);
 
-$app->post('/projects', ['uses' => 'ProjectsController@createProject']);
+// We are using a Middleware that doesn't require configuration
+// https://github.com/vluzrmos/lumen-cors
+$app->group(['middleware' => []], function () use ($app) {
+    // Projects
+    $app->get('/projects', ['uses' => 'ProjectsController@getAll']);
+    $app->get('/projects/{id}', ['uses' => 'ProjectsController@getProject']);
 
-$app->put('/projects/{id}', ['uses' => 'ProjectsController@updateProject']);
-$app->delete('/projects/{id}', ['uses' => 'ProjectsController@deleteProject']);
+    $app->post('/projects', ['uses' => 'ProjectsController@createProject']);
+
+    $app->put('/projects/{id}', ['uses' => 'ProjectsController@updateProject']);
+    $app->delete('/projects/{id}', ['uses' => 'ProjectsController@deleteProject']);
 
 // Issues
-$app->get('/issues', ['uses' => 'IssuesController@getAll']);
-$app->get('/issues/{id}', ['uses' => 'IssuesController@getIssue']);
+    $app->get('/issues', ['uses' => 'IssuesController@getAll']);
+    $app->get('/issues/{id}', ['uses' => 'IssuesController@getIssue']);
 
-$app->post('/issues', ['uses' => 'IssuesController@createIssue']);
+    $app->post('/issues', ['uses' => 'IssuesController@createIssue']);
 
-$app->put('/issues/{id}', ['uses' => 'IssuesController@updateIssue']);
-$app->delete('/issues/{id}', ['uses' => 'IssuesController@deleteIssue']);
+    $app->put('/issues/{id}', ['uses' => 'IssuesController@updateIssue']);
+    $app->delete('/issues/{id}', ['uses' => 'IssuesController@deleteIssue']);
 
 // Users
-$app->get('/users', ['uses' => 'UsersController@getAll']);
-$app->get('/users/{id}', ['uses' => 'UsersController@getUser']);
+    $app->get('/users', ['uses' => 'UsersController@getAll']);
+    $app->get('/users/{id}', ['uses' => 'UsersController@getUser']);
 
-$app->post('/users', ['uses' => 'UsersController@createUser']);
+    $app->post('/users', ['uses' => 'UsersController@createUser']);
 
-$app->put('/users/{id}', ['uses' => 'UsersController@updateUser']);
-$app->delete('/users/{id}', ['uses' => 'UsersController@deleteUser']);
+    $app->put('/users/{id}', ['uses' => 'UsersController@updateUser']);
+    $app->delete('/users/{id}', ['uses' => 'UsersController@deleteUser']);
+});
+
