@@ -28,6 +28,8 @@ de *end-points* que hemos creado para ti y que está disponible en: `<REPO>/webt
 
 Una vez importada tu colección tendrás acceso a todos los servicios de Lumen como en la siguiente imagen:
 
+![Postman](https://raw.githubusercontent.com/webtrainingmx/rest-api-project-manager-junio-2017/master/webtraining/img/postman-get-users.png)
+
 
 ## Instalación para Desarrollo
 
