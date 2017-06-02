@@ -1,0 +1,311 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Project Manager API",
+		"_postman_id": "017aca66-6eea-f57f-2445-09f109a7aa1d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE user",
+			"request": {
+				"url": "http://localhost:8085/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\" : \"esmeralda-rodriguez\",\n  \"email\" : \"esmeralda@webtraining.mx\",\n  \"password\" : \"esmeralda\",\n  \"name\" : \"Esmeralda Rodríguez\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET users",
+			"request": {
+				"url": "http://localhost:8085/users",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE user",
+			"request": {
+				"url": "http://localhost:8085/users/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\" : \"esmeralda-rodriguez-webt\",\n  \"email\" : \"esmeralda@webtraining.mx\",\n  \"password\" : \"esmeralda\",\n  \"name\" : \"Esmeralda Rodríguez\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET one user",
+			"request": {
+				"url": "http://localhost:8085/users/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE user",
+			"request": {
+				"url": "http://localhost:8085/users/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE project",
+			"request": {
+				"url": "http://localhost:8085/projects",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\" : \"Sistema de Evaluaciones\",\n  \"slug\" : \"SIE\",\n  \"user_id\" : 2,\n  \"description\" : \"Projecto relacionado con las tareas del sistema de evaluaciones\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET projects",
+			"request": {
+				"url": "http://localhost:8085/projects",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE project",
+			"request": {
+				"url": "http://localhost:8085/projects/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\" : \"Sistema de Evaluaciones 2017\",\n  \"slug\" : \"SIE\",\n  \"user_id\" : 2,\n  \"description\" : \"Proyecto relacionado con las tareas del sistema de evaluaciones\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET one project",
+			"request": {
+				"url": "http://localhost:8085/projects/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE project",
+			"request": {
+				"url": "http://localhost:8085/projects/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE issue",
+			"request": {
+				"url": "http://localhost:8085/issues",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\" : \"Crear layout principal de la aplicación\",\n  \"slug\" : \"01\",\n  \"user_id\" : 2,\n  \"description\" : \"Este layout deberá usar la última versión estable de Bootstrap\",\n  \"project_id\" : 1,\n  \"reporter\" : 2,\n  \"assignee\" : 2,\n  \"type\" : \"TASK\",\n  \"status\" : \"OPEN\",\n  \"priority\" : \"CRITICAL\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET issues",
+			"request": {
+				"url": "http://localhost:8085/issues",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE issue",
+			"request": {
+				"url": "http://localhost:8085/issues/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\" : \"Crear layout principal de la aplicación con Bootstrap\",\n  \"slug\" : \"01\",\n  \"user_id\" : 2,\n  \"description\" : \"Este layout deberá usar la última versión estable de Bootstrap\",\n  \"project_id\" : 1,\n  \"reporter\" : 2,\n  \"assignee\" : 2,\n  \"type\" : \"TASK\",\n  \"status\" : \"OPEN\",\n  \"priority\" : \"CRITICAL\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET one issue",
+			"request": {
+				"url": "http://localhost:8085/issues/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE issue",
+			"request": {
+				"url": "http://localhost:8085/issues/2",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

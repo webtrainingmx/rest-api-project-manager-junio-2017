@@ -21,6 +21,14 @@ XAMPP con PHP 7.1 (recomendado). Esto te instalará MySQL, PHPMyAdmin, Apache y 
 
 2) También necesitaremos composer ([descargar aquí](https://getcomposer.org/)) para descargar las dependencias de [Laravel Lumen](https://lumen.laravel.com/).
 
+3) Algo que recomendamos es instalar un cliente para probar todos tus *end-points*. 
+Nuestra herramienta favorita para tal propósito es [Postman](https://www.getpostman.com/) que tiene una
+aplicación gratuita para Windows, GNU/Linux y OS X. Después de instalar Postman puedes **importar** una colección
+de *end-points* que hemos creado para ti y que está disponible en: `<REPO>/webtraining/Project Manager API.postman_collection`.
+
+Una vez importada tu colección tendrás acceso a todos los servicios de Lumen como en la siguiente imagen:
+
+
 ## Instalación para Desarrollo
 
 1) Instalar dependencias de Composer (ejecutar desde el directorio raiz de este proyecto).
