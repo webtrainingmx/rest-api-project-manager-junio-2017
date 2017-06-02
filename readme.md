@@ -4,7 +4,7 @@ Un ejemplo de RESTful API creado con Laravel Lumen.
 
 ## Pre-requisitos
 
-Este RESTful API fue creado con Laravel Lumen, que nos exige una versión moderna de PHP y algunas de sus extensiones instaladas:
+1) Este RESTful API fue creado con [Laravel Lumen](https://lumen.laravel.com/), que nos exige una versión moderna de PHP y algunas de sus extensiones instaladas:
 
 ```
 PHP >= 5.6.4
@@ -18,6 +18,8 @@ XML PHP Extension
 Para desarrollo y configuración rápida te recomendamos instalar un meta-paquete como XAMPP 
 [descargar aquí](https://www.apachefriends.org/download.html). Sólo hay que estar seguros de descargar
 XAMPP con PHP 7.1 (recomendado). Esto te instalará MySQL, PHPMyAdmin, Apache y claro un PHP moderno.
+
+2) También necesitaremos composer ([descargar aquí](https://getcomposer.org/)) para descargar las dependencias de [Laravel Lumen](https://lumen.laravel.com/).
 
 ## Instalación para Desarrollo
 
@@ -71,6 +73,7 @@ debería funcionar correctamente).
 
 
 **Cuando intento arrancar el servidor en el puerto 8085 me dice que el puerto ya está ocupado ¿cómo lo soluciono?**
+
 Simplemente cambia el puerto de conexión, por ejemplo si queremos arrancar el servidor en el puerto 8089:
 ```
 php -S localhost:8089 -t public
