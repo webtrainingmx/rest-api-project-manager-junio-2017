@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use App\Project;
+use App\User;
 
 class ProjectsController extends Controller
 {
@@ -31,6 +32,11 @@ class ProjectsController extends Controller
     {
         if ($request->isJson()) {
             $data = $request->json()->all();
+            $userExists = User::where("id", $data['user_id'])->exists();
+
+            if ($userExists === FALSE) {
+                return response()->json(['error' => 'Invalid parameters'], 406);
+            }
 
             $project = Project::create([
                 'title' => $data['title'],
