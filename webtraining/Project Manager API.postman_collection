@@ -19,14 +19,14 @@
 						"description": ""
 					},
 					{
-						"key": "Authorization",
+						"key": "Api-Token",
 						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"username\" : \"esmeralda-rodriguez\",\n  \"email\" : \"esmeralda@webtraining.mx\",\n  \"password\" : \"esmeralda\",\n  \"name\" : \"Esmeralda Rodríguez\"\n}"
+					"raw": "{\n  \"username\" : \"sofia-ortiz\",\n  \"email\" : \"sofia@webtraining.mx\",\n  \"password\" : \"sofia\",\n  \"name\" : \"Sofía Ortiz\"\n}"
 				},
 				"description": ""
 			},
@@ -44,7 +44,7 @@
 						"description": ""
 					},
 					{
-						"key": "Authorization",
+						"key": "Api-Token",
 						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
@@ -69,7 +69,7 @@
 						"description": ""
 					},
 					{
-						"key": "Authorization",
+						"key": "Api-Token",
 						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
@@ -94,7 +94,7 @@
 						"description": ""
 					},
 					{
-						"key": "Authorization",
+						"key": "Api-Token",
 						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
@@ -119,7 +119,7 @@
 						"description": ""
 					},
 					{
-						"key": "Authorization",
+						"key": "Api-Token",
 						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
@@ -144,7 +144,7 @@
 						"description": ""
 					},
 					{
-						"key": "Authorization",
+						"key": "Api-Token",
 						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
@@ -169,7 +169,7 @@
 						"description": ""
 					},
 					{
-						"key": "Authorization",
+						"key": "Api-Token",
 						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
@@ -194,7 +194,7 @@
 						"description": ""
 					},
 					{
-						"key": "Authorization",
+						"key": "Api-Token",
 						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
@@ -219,7 +219,7 @@
 						"description": ""
 					},
 					{
-						"key": "Authorization",
+						"key": "Api-Token",
 						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
@@ -244,7 +244,7 @@
 						"description": ""
 					},
 					{
-						"key": "Authorization",
+						"key": "Api-Token",
 						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
@@ -269,14 +269,14 @@
 						"description": ""
 					},
 					{
-						"key": "Authorization",
+						"key": "Api-Token",
 						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"title\" : \"Crear layout principal de la aplicación\",\n  \"slug\" : \"01\",\n  \"user_id\" : 2,\n  \"description\" : \"Este layout deberá usar la última versión estable de Bootstrap\",\n  \"project_id\" : 1,\n  \"reporter\" : 2,\n  \"assignee\" : 2,\n  \"type\" : \"TASK\",\n  \"status\" : \"OPEN\",\n  \"priority\" : \"CRITICAL\"\n}"
+					"raw": "{\n  \"title\" : \"Crear layout principal de la aplicación\",\n  \"slug\" : \"03\",\n  \"user_id\" : 2,\n  \"description\" : \"Este layout deberá usar la última versión estable de Bootstrap\",\n  \"project_id\" : 1,\n  \"reporter\" : 2,\n  \"assignee\" : 2,\n  \"type\" : \"TASK\",\n  \"status\" : \"OPEN\",\n  \"priority\" : \"CRITICAL\"\n}"
 				},
 				"description": ""
 			},
@@ -294,7 +294,7 @@
 						"description": ""
 					},
 					{
-						"key": "Authorization",
+						"key": "Api-Token",
 						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
@@ -319,7 +319,7 @@
 						"description": ""
 					},
 					{
-						"key": "Authorization",
+						"key": "Api-Token",
 						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
@@ -344,7 +344,7 @@
 						"description": ""
 					},
 					{
-						"key": "Authorization",
+						"key": "Api-Token",
 						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
@@ -369,7 +369,7 @@
 						"description": ""
 					},
 					{
-						"key": "Authorization",
+						"key": "Api-Token",
 						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
@@ -385,7 +385,7 @@
 		{
 			"name": "AUTH user",
 			"request": {
-				"url": "http://localhost:8085/users/token",
+				"url": "http://localhost:8085/users/login",
 				"method": "POST",
 				"header": [
 					{
@@ -394,14 +394,15 @@
 						"description": ""
 					},
 					{
-						"key": "Authorization",
+						"key": "Api-Token",
 						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
-						"description": ""
+						"description": "",
+						"disabled": true
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"username\" : \"esmeralda-rodriguez\",\n  \"email\" : \"esmeralda@webtraining.mx\",\n  \"password\" : \"esmeralda\",\n  \"name\" : \"Esmeralda Rodríguez\"\n}"
+					"raw": "{\n  \"username\" : \"sofia-ortiz\",\n  \"email\" : \"sofia@webtraining.mx\",\n  \"password\" : \"sofia\",\n  \"name\" : \"Sofía Ortiz\"\n}"
 				},
 				"description": ""
 			},

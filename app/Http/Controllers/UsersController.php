@@ -114,9 +114,14 @@ class UsersController extends Controller
         if ($request->isJson()) {
 
             try {
-                $user = User::where('api_token', $request->header('Authorization'))->first();
-                
-                return response()->json($user, 200);
+                $data = $request->json()->all();
+                $user = User::where('username', $data['username'])->first();
+
+                if (Hash::check($data['password'], $user->password)) {
+                    return response()->json($user, 200);
+                } else {
+                    return response()->json(['error' => 'No content'], 406);
+                }
             } catch (ModelNotFoundException $e) {
                 return response()->json(['error' => 'No content'], 406);
             }

@@ -21,6 +21,10 @@ $app->get('/key', function () {
 
 // We are using a Middleware that doesn't require configuration
 // https://github.com/vluzrmos/lumen-cors
+$app->group(['middleware' => []], function () use ($app) {
+    $app->post('/users/login', ['uses' => 'UsersController@getToken']);
+});
+
 $app->group(['middleware' => ['auth']], function () use ($app) {
     // Projects
     $app->get('/projects', ['uses' => 'ProjectsController@getAll']);
@@ -45,7 +49,6 @@ $app->group(['middleware' => ['auth']], function () use ($app) {
     $app->get('/users/{id}', ['uses' => 'UsersController@getUser']);
 
     $app->post('/users', ['uses' => 'UsersController@createUser']);
-    $app->post('/users/token', ['uses' => 'UsersController@getToken']);
 
     $app->put('/users/{id}', ['uses' => 'UsersController@updateUser']);
     $app->delete('/users/{id}', ['uses' => 'UsersController@deleteUser']);
