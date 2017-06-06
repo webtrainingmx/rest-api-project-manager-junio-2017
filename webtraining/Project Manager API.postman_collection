@@ -17,6 +17,11 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
+						"description": ""
 					}
 				],
 				"body": {
@@ -36,6 +41,11 @@
 					{
 						"key": "Content-Type",
 						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
 				],
@@ -57,6 +67,11 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
+						"description": ""
 					}
 				],
 				"body": {
@@ -76,6 +91,11 @@
 					{
 						"key": "Content-Type",
 						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
 				],
@@ -97,6 +117,11 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
+						"description": ""
 					}
 				],
 				"body": {
@@ -110,18 +135,23 @@
 		{
 			"name": "CREATE project",
 			"request": {
-				"url": "http://localhost:8085/projects",
+				"url": "http://172.104.91.187/projects",
 				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
 						"value": "application/json",
 						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
+						"description": ""
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"title\" : \"Sistema de Evaluaciones\",\n  \"slug\" : \"SIE\",\n  \"user_id\" : 2,\n  \"description\" : \"Projecto relacionado con las tareas del sistema de evaluaciones\"\n}"
+					"raw": "{\n  \"title\" : \"New project in Japaan\",\n  \"slug\" : \"SIE\",\n  \"user_id\" : 2,\n  \"description\" : \"Projecto relacionado con las tareas del sistema de evaluaciones\"\n}"
 				},
 				"description": ""
 			},
@@ -136,6 +166,11 @@
 					{
 						"key": "Content-Type",
 						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
 				],
@@ -157,11 +192,16 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
+						"description": ""
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"title\" : \"Sistema de Evaluaciones 2017\",\n  \"slug\" : \"SIE\",\n  \"user_id\" : 2,\n  \"description\" : \"Proyecto relacionado con las tareas del sistema de evaluaciones\"\n}"
+					"raw": "{\n  \"title\" : \"Sistema de Evaluaciones 2017 Actualizado\",\n  \"slug\" : \"SIE\",\n  \"user_id\" : 2,\n  \"description\" : \"Proyecto relacionado con las tareas del sistema de evaluaciones\"\n}"
 				},
 				"description": ""
 			},
@@ -176,6 +216,11 @@
 					{
 						"key": "Content-Type",
 						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
 				],
@@ -197,6 +242,11 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
+						"description": ""
 					}
 				],
 				"body": {
@@ -216,6 +266,11 @@
 					{
 						"key": "Content-Type",
 						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
 				],
@@ -237,6 +292,11 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
+						"description": ""
 					}
 				],
 				"body": {
@@ -256,6 +316,11 @@
 					{
 						"key": "Content-Type",
 						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
 						"description": ""
 					}
 				],
@@ -277,6 +342,11 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
+						"description": ""
 					}
 				],
 				"body": {
@@ -297,11 +367,41 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
+						"description": ""
 					}
 				],
 				"body": {
 					"mode": "raw",
 					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "AUTH user",
+			"request": {
+				"url": "http://localhost:8085/users/token",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "jJHGtk3IoZ84CmKlDz5N206w46yaj6v4mk0vXdTDl5w80iqnk0skp9Jp6NQ3",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\" : \"esmeralda-rodriguez\",\n  \"email\" : \"esmeralda@webtraining.mx\",\n  \"password\" : \"esmeralda\",\n  \"name\" : \"Esmeralda Rodríguez\"\n}"
 				},
 				"description": ""
 			},
