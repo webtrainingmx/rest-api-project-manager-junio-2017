@@ -21,7 +21,7 @@ $app->get('/key', function () {
 
 // We are using a Middleware that doesn't require configuration
 // https://github.com/vluzrmos/lumen-cors
-$app->group(['middleware' => []], function () use ($app) {
+$app->group(['middleware' => ['auth']], function () use ($app) {
     // Projects
     $app->get('/projects', ['uses' => 'ProjectsController@getAll']);
     $app->get('/projects/{id}', ['uses' => 'ProjectsController@getProject']);
