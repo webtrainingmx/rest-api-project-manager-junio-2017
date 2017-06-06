@@ -108,4 +108,21 @@ class UsersController extends Controller
             return response()->json(['error' => 'Unauthorized'], 401, []);
         }
     }
+
+    public function getToken(Request $request)
+    {
+        if ($request->isJson()) {
+
+            try {
+                $user = User::where('api_token', $request->header('Authorization'))->first();
+                
+                return response()->json($user, 200);
+            } catch (ModelNotFoundException $e) {
+                return response()->json(['error' => 'No content'], 406);
+            }
+
+        } else {
+            return response()->json(['error' => 'Unauthorized'], 401, []);
+        }
+    }
 }

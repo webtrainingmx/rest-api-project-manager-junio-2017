@@ -45,6 +45,7 @@ $app->group(['middleware' => ['auth']], function () use ($app) {
     $app->get('/users/{id}', ['uses' => 'UsersController@getUser']);
 
     $app->post('/users', ['uses' => 'UsersController@createUser']);
+    $app->post('/users/token', ['uses' => 'UsersController@getToken']);
 
     $app->put('/users/{id}', ['uses' => 'UsersController@updateUser']);
     $app->delete('/users/{id}', ['uses' => 'UsersController@deleteUser']);
