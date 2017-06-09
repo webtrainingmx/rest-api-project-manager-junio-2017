@@ -116,8 +116,8 @@ class UsersController extends Controller
             try {
                 $data = $request->json()->all();
                 $user = User::where('username', $data['username'])->first();
-
-                if (Hash::check($data['password'], $user->password)) {
+                
+                if ($user && Hash::check($data['password'], $user->password)) {
                     return response()->json($user, 200);
                 } else {
                     return response()->json(['error' => 'No content'], 406);
