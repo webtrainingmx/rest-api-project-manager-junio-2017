@@ -6,14 +6,35 @@
         .margin-top-xl {
             margin-top: 60px;
         }
+
+        .github-fork-ribbon:before, .github-fork-ribbon:after {
+            height: 30px !important;
+
+        }
+        .github-fork-ribbon:before {
+            background-color: #f16b2f !important;
+        }
     </style>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css"/>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.ie.min.css"/>
+    <![endif]-->
 </head>
 <body>
+<a class="github-fork-ribbon" target="_blank"
+   href="https://github.com/webtrainingmx/rest-api-project-manager-junio-2017" title="Fork me on GitHub">Fork me on GitHub</a>
 <div class="container margin-top-xl">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <h3 id="project-manager-api">Project Manager API</h3>
             <p>Un ejemplo de RESTful API creado con Laravel Lumen.</p>
+            <div class="alert alert-success">
+
+                <a href="https://github.com/webtrainingmx/rest-api-project-manager-junio-2017" target="_blank">Ver este
+                    proyecto en Github</a>
+            </div>
             <h4 id="pre-requisitos">Pre-requisitos</h4>
             <p>1) Este RESTful API fue creado con <a href="https://lumen.laravel.com/">Laravel Lumen</a>, que nos exige
                 una
