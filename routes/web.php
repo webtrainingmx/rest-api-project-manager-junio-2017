@@ -12,7 +12,8 @@
 */
 
 $app->get('/', function () use ($app) {
-    return $app->version();
+//    return $app->version();
+    return view("index");
 });
 
 $app->get('/key', function () {
@@ -25,7 +26,7 @@ $app->group(['middleware' => []], function () use ($app) {
     $app->post('/users/login', ['uses' => 'UsersController@getToken']);
 });
 
-$app->group(['middleware' => ['auth']], function () use ($app) {
+$app->group(['middleware' => []], function () use ($app) {
     // Projects
     $app->get('/projects', ['uses' => 'ProjectsController@getAll']);
     $app->get('/projects/{id}', ['uses' => 'ProjectsController@getProject']);
